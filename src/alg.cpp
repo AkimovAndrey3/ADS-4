@@ -29,7 +29,7 @@ int countPairs3(int *arr, int len, int value) {
   for (int i = 0; i < len-1; i++) {
     int leftBorder = i;
     int rightBorder = len - 1;
-    while (rightBorder - 1 > leftBorder) {
+    while (rightBorder > leftBorder) {
       middle = (rightBorder + leftBorder) / 2;
       if ((arr[i] + arr[middle]) == value) {
         k++;
